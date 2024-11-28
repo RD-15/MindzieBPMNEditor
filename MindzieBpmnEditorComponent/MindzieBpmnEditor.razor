@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Components.Web;
+
+<h3>Mindzie BPMN Editor</h3>
+
+<label for="myFile">Choose BPMN Diagram </label>
+<input type="file" id="myFile" name="myFile"/>
+<button type="button" class="btn btn-primary" @onclick="LoadBPMNDiagram">
+    Load
+</button>
+
+<button type="button" class="btn btn-primary" @onclick="SaveBPMNDiagram">
+    Save
+</button>
+
+<div style="width:100%;height:500px" id="canvas"></div>
+
+
